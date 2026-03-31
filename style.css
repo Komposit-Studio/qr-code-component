@@ -30,12 +30,21 @@ color 0 0 0 / 0.0477
 
 */
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 html {
   font-family: "Outfit", sans-serif;
 }
 
 body {
-  background-color: rgb(213, 225, 239);
+  background-color: rgb(213 225 239);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
@@ -43,6 +52,7 @@ h2 {
   line-height: 1.2;
   letter-spacing: 0px;
   font-weight: 700;
+  color: rgb(31 49 79);
 }
 
 p {
@@ -50,8 +60,33 @@ p {
   line-height: 1.4;
   letter-spacing: 0.2px;
   font-weight: 400;
+  color: rgb(104 119 141);
 }
 
 img {
-  max-width: 100%;
+  width: 288px;
+  aspect-ratio: 1;
+  border-radius: 10px;
+}
+
+.card {
+  background-color: rgb(255 255 255);
+  width: fit-content;
+  height: fit-content;
+  padding: 16px 16px 40px 16px;
+  border-radius: 20px;
+  box-shadow: 0 25px 25px rgb(0 0 0 / 0.0477);
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.text {
+  width: 288px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-inline: 16px;
 }
