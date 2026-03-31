@@ -30,6 +30,28 @@ color 0 0 0 / 0.0477
 
 */
 
+html {
+  font-family: "Outfit", sans-serif;
+}
+
 body {
   background-color: rgb(213, 225, 239);
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
 }
