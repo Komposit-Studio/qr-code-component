@@ -1,34 +1,40 @@
-/*
+:root {
+  /* Slate */
+  --slate-900: rgb(31 49 79);
+  --slate-500: rgb(104 119 141);
+  --slate-300: rgb(213 225 239);
 
-Color:
-Slate
-Slate-900 31, 49, 79
-Slate-500 104, 119, 141
-Slate-300 213, 225, 239
+  /* White */
+  --white: rgb(255 255 255);
 
-White 255, 255, 255
+  /* Typography */
+  --font-family: "Outfit";
 
-Typography:
-Text preset 1
-Outfit Bold (700)
-22px 120% line height 0px letter spacing
+  --font-weight-bold: 700;
+  --font-weight-regular: 400;
 
-Text preset 2
-Outfit Regular (400)
-15px 140% line height 0.2px letter spacing
+  --font-size-heading: 22px;
+  --font-size-paragraph: 15px;
 
-Spacing:
-500 - 40px
-300 - 24px
-200 - 16px
+  --line-height-heading: 1.2;
+  --line-height-paragraph: 1.4;
 
-Card shadow:
+  --letter-spacing-heading: 0px;
+  --letter-spacing-paragraph: 0.2px;
 
-y 25px
-blur 25px
-color 0 0 0 / 0.0477
+  /* Spacing */
+  --spacing-500: 40px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
 
-*/
+  /* Card Shadow */
+  --shadow-y-offset: 25px;
+  --shadow-blur: 25px;
+  --shadow-color: rgb(0 0 0 / 0.0477);
+
+  /* Image Size */
+  --img-size: 288px;
+}
 
 * {
   box-sizing: border-box;
@@ -36,11 +42,11 @@ color 0 0 0 / 0.0477
 }
 
 html {
-  font-family: "Outfit", sans-serif;
+  font-family: var(--font-family), sans-serif;
 }
 
 body {
-  background-color: rgb(213 225 239);
+  background-color: var(--slate-300);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -48,23 +54,23 @@ body {
 }
 
 h2 {
-  font-size: 22px;
-  line-height: 1.2;
-  letter-spacing: 0px;
-  font-weight: 700;
-  color: rgb(31 49 79);
+  font-size: var(--font-size-heading);
+  line-height: var(--line-height-heading);
+  letter-spacing: var(--letter-spacing-heading);
+  font-weight: var(--font-weight-bold);
+  color: var(--slate-900);
 }
 
 p {
-  font-size: 15px;
-  line-height: 1.4;
-  letter-spacing: 0.2px;
-  font-weight: 400;
-  color: rgb(104 119 141);
+  font-size: var(--font-size-paragraph);
+  line-height: var(--line-height-paragraph);
+  letter-spacing: var(--letter-spacing-paragraph);
+  font-weight: var(--font-weight-regular);
+  color: var(--slate-500);
 }
 
 img {
-  width: 288px;
+  width: var(--img-size);
   aspect-ratio: 1;
   border-radius: 10px;
 }
@@ -73,20 +79,21 @@ img {
   background-color: rgb(255 255 255);
   width: fit-content;
   height: fit-content;
-  padding: 16px 16px 40px 16px;
+  padding: var(--spacing-200);
+  padding-block-end: var(--spacing-500);
   border-radius: 20px;
-  box-shadow: 0 25px 25px rgb(0 0 0 / 0.0477);
+  box-shadow: 0 var(--shadow-y-offset) var(--shadow-blur) var(--shadow-color);
   align-content: center;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: var(--spacing-300);
 }
 
 .text {
-  width: 288px;
+  width: var(--img-size);
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding-inline: 16px;
+  gap: var(--spacing-200);
+  padding-inline: var(--spacing-200);
 }
