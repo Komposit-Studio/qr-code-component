@@ -10,10 +10,11 @@ White 255, 255, 255
 
 Typography:
 Text preset 1
-Outfit Bold
+Outfit Bold (700)
 22px 120% line height 0px letter spacing
 
 Text preset 2
+Outfit Regular (400)
 15px 140% line height 0.2px letter spacing
 
 Spacing:
@@ -28,3 +29,7 @@ blur 25px
 color 0 0 0 / 0.0477
 
 */
+
+body {
+  background-color: rgb(213, 225, 239);
+}
