@@ -54,7 +54,7 @@ body {
   align-items: center;
 }
 
-h2 {
+h1 {
   font-size: var(--font-size-heading);
   line-height: var(--line-height-heading);
   letter-spacing: var(--letter-spacing-heading);
