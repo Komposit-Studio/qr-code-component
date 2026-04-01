@@ -77,7 +77,7 @@ img {
 }
 
 .card {
-  background-color: rgb(255 255 255);
+  background-color: var(--white);
   width: fit-content;
   height: fit-content;
   padding: var(--spacing-200);
