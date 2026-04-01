@@ -44,11 +44,12 @@
 
 html {
   font-family: var(--font-family), sans-serif;
+  height: 100%;
 }
 
 body {
   background-color: var(--slate-300);
-  height: 100dvh;
+  min-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
