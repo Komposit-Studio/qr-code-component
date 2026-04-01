@@ -48,6 +48,7 @@ html {
 
 body {
   background-color: var(--slate-300);
+  min-height: 100vh;
   min-height: 100dvh;
   display: flex;
   justify-content: center;
@@ -71,28 +72,27 @@ p {
 }
 
 img {
-  width: var(--img-size);
+  max-width: 100%;
   aspect-ratio: 1;
   border-radius: 10px;
 }
 
 .card {
   background-color: var(--white);
-  width: fit-content;
+  width: min(320px, 90vw);
   height: fit-content;
   padding: var(--spacing-200);
   padding-block-end: var(--spacing-500);
   border-radius: 20px;
   box-shadow: 0 var(--shadow-y-offset) var(--shadow-blur)
     rgb(var(--shadow-color) / var(--shadow-color-alpha));
-  align-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: var(--spacing-300);
 }
 
 .text {
-  width: var(--img-size);
   text-align: center;
   display: flex;
   flex-direction: column;
