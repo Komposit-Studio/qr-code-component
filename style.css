@@ -47,7 +47,6 @@ html {
 }
 
 body {
-  margin: 0;
   background-color: var(--slate-300);
   min-height: 100dvh;
   display: flex;
