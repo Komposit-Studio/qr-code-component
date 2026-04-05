@@ -13,8 +13,8 @@
   --font-weight-bold: 700;
   --font-weight-regular: 400;
 
-  --font-size-heading: 22px;
-  --font-size-paragraph: 15px;
+  --font-size-heading: 2.2rem;
+  --font-size-paragraph: 1.5rem;
 
   --line-height-heading: 1.2;
   --line-height-paragraph: 1.4;
@@ -44,6 +44,7 @@
 
 html {
   font-family: var(--font-family), sans-serif;
+  font-size: 62.5%;
 }
 
 body {
