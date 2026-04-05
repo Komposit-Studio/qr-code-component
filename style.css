@@ -23,18 +23,18 @@
   --letter-spacing-paragraph: 0.2px;
 
   /* Spacing */
-  --spacing-500: 40px;
-  --spacing-300: 24px;
-  --spacing-200: 16px;
+  --spacing-500: 4rem;
+  --spacing-300: 2.4rem;
+  --spacing-200: 1.6rem;
 
   /* Card Shadow */
-  --shadow-y-offset: 25px;
-  --shadow-blur: 25px;
+  --shadow-y-offset: 2.5rem;
+  --shadow-blur: 2.5rem;
   --shadow-color: 0 0 0;
   --shadow-color-alpha: 0.0477;
 
   /* Card Size */
-  --card-size: 320px;
+  --card-size: 32rem;
 }
 
 * {
