@@ -40,6 +40,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 html {
@@ -72,6 +73,10 @@ p {
   color: var(--slate-500);
 }
 
+.qr-link {
+  display: contents;
+}
+
 img {
   max-width: 100%;
   aspect-ratio: 1;
@@ -79,6 +84,7 @@ img {
 }
 
 .card {
+  margin: auto;
   background-color: var(--white);
   width: min(var(--card-size), 90vw);
   height: fit-content;
